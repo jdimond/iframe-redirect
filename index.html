@@ -187,6 +187,7 @@
                         
                         // Wait for iframe to load before redirecting
                         iframe.onload = function() {
+                            console.log("Redirecting to ", data.redirect); 
                             window.location.href = data.redirect;
                         };
                         
